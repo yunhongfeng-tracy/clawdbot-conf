@@ -1,0 +1,22 @@
+# 敏感信息
+credentials/
+*.log
+*.log.*
+
+# 系统文件
+.git/
+.node_modules/
+.DS_Store
+Thumbs.db
+
+# 临时文件
+*.tmp
+*.swp
+*~
+.env
+
+# OpenClaw 运行时数据
+extensions/
+devices/
+cron/
+canvas/
