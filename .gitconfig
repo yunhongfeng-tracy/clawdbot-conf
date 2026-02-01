@@ -1,0 +1,23 @@
+
+# Git 别名 - 简化常用操作
+[alias]
+    # 查看历史（简洁版）
+    lg = log --oneline --graph --all
+    # 查看详细日志
+    ll = log --oneline -10
+    # 暂存所有修改
+    ca = commit -am
+    # 快速推送
+    pp = push origin master
+    # 快速拉取
+    pl = pull origin master
+    # 回滚到上一个提交
+    undo = reset --hard HEAD~1
+    # 回滚到指定提交
+    rollback = reset --hard
+    # 查看变更
+    st = status
+    # 暂存工作区
+    save = stash push -m
+    # 恢复暂存
+    pop = stash pop
