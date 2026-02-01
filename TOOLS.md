@@ -27,6 +27,16 @@ Things like:
 - Default speaker: Kitchen HomePod
 ```
 
+## Audio/Video Tools
+
+### FFmpeg
+- **路径**: `/usr/bin/ffmpeg`
+- **版本**: 7.0.2
+- **用途**: 音频/视频处理、格式转换、语音识别预处理
+- **支持的音频格式**: MP3, WAV, OGG, AAC, FLAC, OPUS 等
+- **安装时间**: 2026-02-01
+```
+
 ## Why Separate?
 
 Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
