@@ -36,16 +36,24 @@ Things like:
 - **支持的音频格式**: MP3, WAV, OGG, AAC, FLAC, OPUS 等
 - **安装时间**: 2026-02-01
 
-### 语音识别 (Whisper)
+### 语音识别 (Whisper - 本地)
 - **脚本路径**: `/root/.openclaw/workspace/scripts/speech-to-text.sh`
-- **API**: OpenAI Whisper (whisper-1)
+- **类型**: 本地模型（无需 API Key）
+- **模型大小**: tiny (~1GB内存), base, small, medium
 - **支持语言**: 中文、英文等
 - **用法**:
   ```bash
+  # 安装
+  pip3 install openai-whisper
+
+  # 转写音频
   ./scripts/speech-to-text.sh <音频文件路径>
+
+  # 使用更大模型（更准确）
+  WHISPER_MODEL=base ./scripts/speech-to-text.sh <音频文件>
   ```
-- **环境变量**: `OPENAI_API_KEY` - OpenAI API 密钥
-- **注意事项**: 需要设置 OPENAI_API_KEY 环境变量
+- **优点**: 完全免费、无需 API Key、数据不上传
+- **首次运行**: 会自动下载模型（约39MB-74MB）
 
 
 ## Why Separate?
