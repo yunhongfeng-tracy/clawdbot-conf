@@ -2,6 +2,8 @@
 credentials/
 *.log
 *.log.*
+.env
+.env.*
 
 # 系统文件
 .git/
@@ -13,10 +15,17 @@ Thumbs.db
 *.tmp
 *.swp
 *~
-.env
+*.wav
+*.mp3
+*.ogg
 
 # OpenClaw 运行时数据
 extensions/
 devices/
 cron/
 canvas/
+
+# 脚本目录（避免上传敏感配置）
+scripts/*.sh
+!scripts/speech-to-text.sh
+
